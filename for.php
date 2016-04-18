@@ -3,9 +3,18 @@
 // ask user for starting number
 fwrite(STDOUT, "Give me a number to start at:\n");
 $userStart = trim(fgets(STDIN));
+// error msg if not numberic 
+if( !is_numeric($userStart) ) {
+    die ("Please enter only numbers.\n");
+}
 // ask user for ending number
 fwrite(STDOUT, "Where should we end?\n");
 $userEnd = trim(fgets(STDIN));
+
+// error msg if not numberic 
+if( !is_numeric($userEnd) ) {
+    die ("Please enter only numbers.\n");
+}
 // ask user for incrementing number
 fwrite(STDOUT, "What should we increment by?\n");
 $userIncrement = trim(fgets(STDIN));
@@ -18,4 +27,4 @@ for ($i = $userStart; $i <= $userEnd; $i +=$userIncrement) {
         $i += 1;
     }
 }
-// error msg if not numberic or blank
+
