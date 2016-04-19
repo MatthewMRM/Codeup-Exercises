@@ -23,10 +23,15 @@ function divide($a, $b)
     // Add code here
 }
 
+function modulus($a, $b)
+{
+	return $a % $b;
+}
+
 echo add(10,5) . PHP_EOL;
 echo subtract(10, 5) . PHP_EOL;
 echo multiply(10,5) . PHP_EOL;
 echo divide(10,5) . PHP_EOL;
-
+echo modulus(10,5) . PHP_EOL;
 
 // Add code to test your functions here
