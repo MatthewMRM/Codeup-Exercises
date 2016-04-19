@@ -23,7 +23,11 @@ $books = array(
     )
 );
 
-foreach ($books as $info) {
-	foreach ($info as $key =>)
-	echo "{$books['The Hobbit']} "
+foreach($books as $title => $titleInfo){
+    echo "=============================\n";
+    echo "{$title}\n";
+    foreach ($titleInfo as $key => $value) {
+        echo "{$key}: {$value}\n";
+    }
 }
+?>
