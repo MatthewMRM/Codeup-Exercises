@@ -1,33 +1,51 @@
 <?php
-
+// Functions listed below to call upon the variables
 function add($a, $b)
 {
-    return $a + $b;
+	if (is_numeric($a) && is_numeric($b)) {
+        return $a + $b;
+    } else {
+        return "ERROR: Both arguments must be numbers\n";
+    }
 }
 
 function subtract($a, $b)
 {
-    return $a - $b;
-    // Add code here
+	if (is_numeric($a) && is_numeric($b)) {
+        return $a - $b;
+    } else {
+        return "ERROR: Both arguments must be numbers\n";
+    }
 }
 
 function multiply($a, $b)
 {
-    return $a * $b;
-    // Add code here
+	if (is_numeric($a) && is_numeric($b)) {
+        return $a * $b;
+    } else {
+        return "ERROR: Both arguments must be numbers\n";
+    }
 }
 
 function divide($a, $b)
 {
-    return $a / $b;
-    // Add code here
+	if (is_numeric($a) && is_numeric($b)) {
+        return $a / $b;
+    } else {
+        return "ERROR: Both arguments must be numbers\n";
+    }
 }
 
 function modulus($a, $b)
 {
-	return $a % $b;
+	if (is_numeric($a) && is_numeric($b)) {
+        return $a % $b;
+    } else {
+        return "ERROR: Both arguments must be numbers\n";
+    }
 }
 
+// My variables listed that are called upon
 echo add(10,5) . PHP_EOL;
 echo subtract(10, 5) . PHP_EOL;
 echo multiply(10,5) . PHP_EOL;
