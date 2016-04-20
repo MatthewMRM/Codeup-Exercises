@@ -1,28 +1,26 @@
+
 <?php
-
 $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
-
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
-
-
-function searchArray($query, $names)
+function searchArray($name, $array)
 {
-	if(array_search($query, $names) !== false){
-		return "TRUE" . PHP_EOL;
+	if (array_search($name, $array) !== false){
+		return TRUE;
 	} else {
-		return "FALSE" . PHP_EOL;
-	} 
+		return FALSE;
+	}
+	
 }
-function compareArray($names, $compare) 
-{
-	$match = 0;
-	foreach ($names as $name) {
-		if(array_search($name, $compare) !== false)
-		{
-			$match++;
-		}
-	}	
-	return $match;
+function compareArrays($name1, $compare2)
+{	
+	$count = 0;
+	foreach($name1 as $name){
+		if (array_search($name, $compare2) !== false){
+			$count++;
+		}	
+	}
+	return $count; 
 }
-echo searchArray($compare, $names) . PHP_EOL;
-echo compareArray($names,$compare) . PHP_EOL;
+echo searchArray('Tina',$names) . PHP_EOL;
+echo searchArray('Bob',$names) . PHP_EOL;
+echo compareArrays($names, $compare) . PHP_EOL;
