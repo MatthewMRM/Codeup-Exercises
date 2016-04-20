@@ -3,7 +3,7 @@
 $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
-function searchArray($name, $array)
+function inArray($name, $array)
 {
 	if (array_search($name, $array) !== false){
 		return TRUE;
@@ -22,6 +22,6 @@ function compareArrays($name1, $compare2)
 	}
 	return $count; 
 }
-var_dump(searchArray('Tina',$names)) . PHP_EOL;
-var_dump(searchArray('Bob',$names)) . PHP_EOL;
+var_dump(inArray('Tina',$names)) . PHP_EOL;
+var_dump(inArray('Bob',$names)) . PHP_EOL;
 echo compareArrays($names, $compare) . PHP_EOL;
