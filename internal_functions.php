@@ -1,6 +1,5 @@
 <?php
 
-<?php
 function inspect($a)
 {
 	if(is_integer($a)){
@@ -46,34 +45,34 @@ $null = NULL;
 echo 'Inspecting $num1:' . PHP_EOL;
 echo inspect($num1) . PHP_EOL;
 
-echo 'Inspecting $num2:' . inspect(num2) . PHP_EOL;
+echo 'Inspecting $num2:' . PHP_EOL;
 echo inspect($num2) . PHP_EOL;
 
-echo 'Inspecting $num3:' . inspect(num3) . PHP_EOL;
+echo 'Inspecting $num3:' . PHP_EOL;
 echo inspect($num3) . PHP_EOL;
 
-echo 'Inspecting $num4:' . inspect(num4) . PHP_EOL;
+echo 'Inspecting $num4:' . PHP_EOL;
 echo inspect($num4) . PHP_EOL;
 
-echo 'Inspecting $null:' . inspect(null) . PHP_EOL;
+echo 'Inspecting $null:' . PHP_EOL;
 echo inspect($null) . PHP_EOL;
 
-echo 'Inspecting $bool1' . inspect(bool1) . PHP_EOL;
+echo 'Inspecting $bool1' . PHP_EOL;
 echo inspect($bool1) . PHP_EOL;
 
-echo 'Inspecting $bool2' . inspect(bool2) . PHP_EOL;
+echo 'Inspecting $bool2' . PHP_EOL;
 echo inspect($bool2) . PHP_EOL;
 
-echo 'Inspecting $string1' . inspect(string1) . PHP_EOL;
+echo 'Inspecting $string1' . PHP_EOL;
 echo inspect($string1) . PHP_EOL;
 
-echo 'Inspecting $string2' . inspect(string2) . PHP_EOL;
+echo 'Inspecting $string2' . PHP_EOL;
 echo inspect($string2) . PHP_EOL;
 
-echo 'Inspecting $array1' . inspect(array1) . PHP_EOL;
+echo 'Inspecting $array1' . PHP_EOL;
 echo inspect($array1) . PHP_EOL;
 
-echo 'Inspecting $array2' . inspect(array2) . PHP_EOL;
+echo 'Inspecting $array2' . PHP_EOL;
 echo inspect($array2) . PHP_EOL;
 
 
