@@ -5,7 +5,7 @@ function inspect($a)
 	if(is_integer($a)){
 		echo "{$a} is an integer." . PHP_EOL;
 	} else if (is_string($a)){
-		if($a == ''){
+		if(empty($a)){
 			echo "The value is an empty string." . PHP_EOL;
 		} else {
 			echo "The value is a string." . PHP_EOL;
@@ -15,7 +15,7 @@ function inspect($a)
 	} else if (is_float($a)){
 		echo "{$a} is a float." . PHP_EOL;
 	} else if (is_array($a)){
-		if($a == []){
+		if(empty($a)){
 			echo "The value is an empty array." . PHP_EOL;
 		}else{
 			echo "The value is an array." . PHP_EOL;
