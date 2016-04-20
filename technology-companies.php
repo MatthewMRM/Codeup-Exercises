@@ -46,5 +46,5 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
-
+asort($companise);
 print_r($companies);
