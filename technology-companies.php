@@ -46,5 +46,11 @@ $companies = [
         'Jean-Louis Gassée'
     ]
 ];
+
+foreach($companies as $companyName => $employees)
+{    
+    sort($employees);
+    $companies[$companyName] = $employees;
+}
 asort($companise);
 print_r($companies);
