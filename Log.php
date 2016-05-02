@@ -10,28 +10,24 @@ class Log
 	}
 	public function logMessage($logLevel, $message) 
 	{
-		$time = date("H-i-s");
+		$currentDate = date("Y-m-d");
 		
-		$this->date = date("Y-m-d");
-		
-	    $this->filename =   "{date}.log";
-	    $date = date("Y-m-d");
+	    $this->filename =   "log-{$currentDate}.log";
+	    $handle = fopen($this->filename, 'a' );
 	    
-	   $onScreen = "Todays date: {$date}  The Current Time: {$time} " . $logLevel . " " . $message . PHP_EOL;
-		fwrite($this->handle,"{$onScreen}" . PHP_EOL);
+	    $currentDateTime = date('Y-m-d h:i:s=T');
+
+	    fwrite($handle, PHP_EOL . $currentDateTime . " " . "[" . $logLevel . "[" . " " . $message);
+	    fclose($handle);
+	}
 	
-		
-	}
-	public function info($message) 
-	{
-	$this->logMessage("INFO", $message);
-	}
-	public function error($message) 
-	{
-	$this->logMessage("ERROR", $message);
-	}
-	public function __destruct()
-	{
-		fclose($this->handle);
-	}
+	public function info($logMessage){
+
+	}   
+
+	public function error() {
+
+
+	} 
+	   
 }
